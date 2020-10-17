@@ -1,1 +1,1 @@
-tooldir=/usr
+tooldir=/usr V=1 VERBOSE=1

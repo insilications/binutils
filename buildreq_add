@@ -3,4 +3,5 @@
 # desirable. One name per line, no whitespace.
 #
 zlib-dev
+zlib-staticdev
 expect

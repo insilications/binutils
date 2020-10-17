@@ -1,0 +1,19 @@
+# Do not use a macro - breaks toolchain
+./configure \
+	--prefix=/usr \
+	--libdir=/usr/lib64 \
+	--includedir=/usr/include \
+	--with-lib-path=/usr/lib64:/usr/lib32:/usr/lib \
+	--enable-shared --disable-static \
+	--target=x86_64-generic-linux \
+	--build=x86_64-generic-linux \
+	--enable-targets=i386-linux,x86_64-linux \
+	--enable-deterministic-archives \
+	--enable-lto \
+	--enable-plugins \
+	--enable-gold \
+	--enable-secureplt \
+	--disable-werror \
+	--enable-64-bit-bfd \
+	--with-system-zlib \
+	--without-debuginfod
