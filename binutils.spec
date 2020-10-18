@@ -191,7 +191,7 @@ export LDFLAGS="${LDFLAGS_GENERATE}"
 ## make_prepend end
 make  %{?_smp_mflags}  tooldir=/usr V=1 VERBOSE=1
 
-make %{?_smp_flags} check tooldir=/usr V=1 VERBOSE=1 || :
+make -j1 check tooldir=/usr V=1 VERBOSE=1 || :
 make distclean || : 
 find . -type f -name 'config.cache' -exec rm {} \;
 export CFLAGS="${CFLAGS_USE}"
